@@ -5,6 +5,7 @@ import me.hex.structure.Cooldownable;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Objects;
 
 public class CommandClass implements Cooldownable<Player> {
 
@@ -22,8 +23,4 @@ public class CommandClass implements Cooldownable<Player> {
         return cooldowns;
     }
 
-    @Override
-    public void addCooldown(Player player, Double d) {
-        cooldowns.put(player, d);
-    }
 }
